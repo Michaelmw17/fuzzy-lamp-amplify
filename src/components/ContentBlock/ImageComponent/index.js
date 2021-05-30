@@ -3,8 +3,8 @@ import React from "react";
 import "./styles.css";
 import { BlurImageLoader } from "./BlurImageLoader";
 
-import small from "./assets/IMG_10503.webp";
-import large from "./assets/IMG_10502.webp";
+// import small from "./assets/IMG_10503.webp";
+// import large from "./assets/IMG_10502.webp";
 
 class ImageWithStatusText extends React.Component {
   constructor(props) {
@@ -23,8 +23,8 @@ class ImageWithStatusText extends React.Component {
     <div className="ImageDiv">
       <BlurImageLoader
         className="img"
-        image={large}
-        placeholder={small}
+        image={ process.env.PUBLIC_URL + "./assets/IMG_10502.webp"}
+        placeholder={ process.env.PUBLIC_URL +  "./assets/IMG_10503.webp"}
         width={2042} //2042px
         height={1360} //1360px
         ratio={66.57868311}
