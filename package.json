@@ -27,6 +27,7 @@
       "react-animated-slider": "1.1.4",
       "react-awesome-slider": "^4.1.0",
       "react-card-flipper": "^1.0.1",
+      "react-dom": "^17.0.2",
       "react-i18next": "^11.8.5",
       "react-loader-spinner": "^4.0.0",
       "react-material-ui-carousel": "^2.2.4",
