@@ -14,13 +14,13 @@ const testData = {
 };
 
 const containerStyle = {
-              height: `30vh`,
+              height: `40vh`,
               width: '80%',
               marginLeft: '5px',
               marginRight: '20px',
               marginTop: '40px',
               maxWidth: '1480px',
-              minWidth: '210px',
+              minheight: '40vh',
               borderRadius: '14px'
 };
 

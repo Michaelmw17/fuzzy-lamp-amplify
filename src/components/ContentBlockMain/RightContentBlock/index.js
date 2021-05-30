@@ -18,9 +18,16 @@ import * as S from "./styles";
 const Row = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/row'));
 const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/col'));
 
-const Image = lazy(() => import('../ImageComponent/index.js'), {
+// const Image = lazy(() => import('../../MyCompGroup/myComp.js'), {
+//     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
+// })
+const Image = lazy(() => import('../../MyCompMain/myComp.js'), {
     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
 })
+
+// const Image = lazy(() => import('../ImageComponent/index.js'), {
+//     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
+// })
 
 const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
   const scrollTo = (id) => {

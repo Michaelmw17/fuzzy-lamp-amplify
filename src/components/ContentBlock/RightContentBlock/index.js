@@ -12,10 +12,12 @@ import './styling.css'
 const Row = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/row'));
 const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/col'));
 
-const Image2 = lazy(() => import('../ImageComponent/index.js'), {
+// const Image2 = lazy(() => import('../ImageComponent/index.js'), {
+//     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
+// })
+const ImageMain = lazy(() => import('../../MyCompGroup/myComp.js'), {
     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
 })
-
 const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
@@ -112,7 +114,8 @@ const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
                       width={100}
                       timeout={3000} />
                       </div>}>
-                            <Image2 rel="preload" />
+                      <ImageMain/>
+                            {/* <Image2 rel="preload" /> */}
                   </Suspense>
             </Slide>
           </Col>
