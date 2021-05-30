@@ -15,9 +15,11 @@ const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/li
 // const Image2 = lazy(() => import('../ImageComponent/index.js'), {
 //     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
 // })
-const ImageMain = lazy(() => import('../../MyCompGroup/myComp.js'), {
-    fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
-})
+// const ImageMain = lazy(() => import('../../MyCompGroup/myComp.js'), {
+//     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
+// })
+const ImageMain = lazy(() => import("../../MyCompGroup/myComp.js"));
+
 const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
