@@ -1,6 +1,5 @@
 {
- "homepage": "http://Michaelmw17.github.io/stunning-jdp",
- "name": "my-app",
+   "name": "my-app",
  "version": "0.1.0",
  "private": true,
  "dependencies": {
@@ -43,11 +42,9 @@
   "web-vitals": "^1.1.0"
  },
  "scripts": {
-    "start": "react-scripts start",
+     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "react-scripts build",
-    "deploy": "aws cp build s3://jdpelectrical --recursive",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
  },
  "eslintConfig": {
