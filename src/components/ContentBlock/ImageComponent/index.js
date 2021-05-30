@@ -23,8 +23,8 @@ class ImageWithStatusText extends React.Component {
     <div className="ImageDiv">
       <BlurImageLoader
         className="img"
-        image={ process.env.PUBLIC_URL + "./assets/IMG_10502.webp"}
-        placeholder={ process.env.PUBLIC_URL +  "./assets/IMG_10503.webp"}
+        image={ process.env.PUBLIC_URL + "/IMG_10502.webp"}
+        placeholder={ process.env.PUBLIC_URL +  "/IMG_10503.webp"}
         width={2042} //2042px
         height={1360} //1360px
         ratio={66.57868311}

@@ -11,8 +11,8 @@ function App() {
     <div className="ImageDiv">
       <BlurImageLoader
        className="img"
-         image={ process.env.PUBLIC_URL + "./assets/light3.webp"}
-        placeholder={ process.env.PUBLIC_URL +  "./assets/light3_.webp"}
+         image={ process.env.PUBLIC_URL + "/light3.webp"}
+        placeholder={ process.env.PUBLIC_URL +  "/light3_.webp"}
         width={2992}
         height={2134}
         ratio={71.323529411}
