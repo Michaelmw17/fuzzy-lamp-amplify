@@ -1,43 +1,28 @@
+
 import React from "react";
 // import ReactDOM from "react-dom";
 import "./styles.css";
 import { BlurImageLoader } from "./BlurImageLoader";
 
-// import small from "./assets/IMG_10503.webp";
-// import large from "./assets/IMG_10502.webp";
+// import small from "./assets/light3_.webp";
+// import large from "./assets/light3.webp";
 
-class ImageWithStatusText extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { imageStatus: "loading" };
-  }
- handleImageLoaded() {
-    this.setState({ imageStatus: "loaded" });
-  }
-
-  handleImageErrored() {
-    this.setState({ imageStatus: "failed to load" });
-  }
-  render() {
+function AppTwo() {
   return (
     <div className="ImageDiv">
       <BlurImageLoader
         className="img"
-        image={ process.env.PUBLIC_URL + "/IMG_10502.webp"}
-        placeholder={ process.env.PUBLIC_URL +  "/IMG_10503.webp"}
-        width={2042} //2042px
-        height={1360} //1360px
-        ratio={66.57868311}
-        
-        onLoad={this.handleImageLoaded.bind(this)}
-        onError={this.handleImageErrored.bind(this)}
+        image={ process.env.PUBLIC_URL + "/IMG_1050.jpg"}
+        placeholder={ process.env.PUBLIC_URL +  "/IMG_1050.jpg"}
+        width={2992}
+        height={2134}
+        ratio={71.323529411}
         rel="preload"
       />
     </div>
   );
 }
-}
-export default ImageWithStatusText;
+export default AppTwo;
 
 // import React, { Suspense } from "react";
 //https://images.unsplash.com/photo-1518991791750-044b923256f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&h=630&q=80

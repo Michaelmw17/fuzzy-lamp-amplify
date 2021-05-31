@@ -12,7 +12,7 @@ const MyComp = () => {
         timeout={3000} //3 secs
       />
                             }>
-        <img src={process.env.PUBLIC_URL + '/IMG_10502.webp'}
+        <img src={process.env.PUBLIC_URL + '/IMG_1050.jpg'}
             alt="Team" style={{
                   display: "absolute",
                 background: '#FFF',

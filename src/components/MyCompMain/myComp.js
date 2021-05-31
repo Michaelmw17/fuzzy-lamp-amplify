@@ -12,7 +12,7 @@ const MyComp = () => {
         timeout={3000} //3 secs
       />
                             }>
-        <img src={process.env.PUBLIC_URL + '/light3.webp'}
+        <img src={process.env.PUBLIC_URL + '/light3.jpg'}
             alt="MainDisplay" style={{
                 background: '#FFF',
                 marginRight: "auto",

@@ -108,7 +108,7 @@ const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
                     timeout={3000}/>
           </div>
 }>
-            <Image id='ImageComp'/>
+            <Image id='ImageComp' rel="preload" />
             </Suspense>
             {/* <SvgIcon
               src={icon}
