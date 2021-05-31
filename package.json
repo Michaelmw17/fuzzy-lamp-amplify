@@ -29,6 +29,7 @@
       "react-card-flipper": "^1.0.1",
       "react-dom": "^17.0.2",
       "react-i18next": "^11.8.5",
+      "react-lazy-load-image-component": "^1.5.1",
       "react-loader-spinner": "^4.0.0",
       "react-material-ui-carousel": "^2.2.4",
       "react-parallax-component": "^1.0.6",
@@ -43,7 +44,7 @@
       "web-vitals": "^1.1.0"
    },
    "scripts": {
-    "start": "react-scripts start",
+      "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "react-scripts test",
       "eject": "react-scripts eject"
