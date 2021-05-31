@@ -18,8 +18,9 @@ const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/li
 // const ImageMain = lazy(() => import('../../MyCompGroup/myComp.js'), {
 //     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
 // })
-const ImageMain = lazy(() => import("../../MyCompGroup/myComp.js"));
 
+const ImageMain = lazy(() => import("../../LazyImages/index.js"));
+// const ImageMain = lazy(() => import("../../MyCompGroup/myComp.js"));
 const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
@@ -116,7 +117,9 @@ const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
                       width={100}
                       timeout={3000} />
                       </div>}>
-                      <ImageMain rel="preload" />
+                      <div class="ImageDiv">
+                      <ImageMain rel="preload"  alt='group'/>
+                      </div>
                             {/* <Image2 rel="preload" /> */}
                   </Suspense>
             </Slide>
