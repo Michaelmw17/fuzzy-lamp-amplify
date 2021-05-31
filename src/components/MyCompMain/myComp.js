@@ -30,6 +30,7 @@ const MyComp = () => {
                 filter: 'drop-shadow(2.5px 2.5px 5px #000)',
                 borderRadius: '5%',
             }}
+            loading="lazy"
             max-age="31536000"
         />
     </Suspense>;

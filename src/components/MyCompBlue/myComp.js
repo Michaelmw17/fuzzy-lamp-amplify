@@ -24,6 +24,7 @@ const MyComp = () => {
                 maxHeight: "100%",
                 left: '350px',
             }}
+            loading="lazy"
             max-age="31536000"
         />
     </Suspense>;
