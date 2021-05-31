@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("throw new Error(\"Module parse failed: Unexpected token (11:2)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| \\n| const App = () => (\\n>   <BrowserRouter   basename={process.env.PUBLIC_URL}>\\n|     <I18nextProvider i18n={i18n}>\\n|       <Router />\");\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (11:2)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| \\n| const App = () => (\\n>   <HashRouter   basename={process.env.PUBLIC_URL}>\\n|     <I18nextProvider i18n={i18n}>\\n|       <Router />\");\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

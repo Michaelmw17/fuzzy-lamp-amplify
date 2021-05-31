@@ -1,13 +1,34 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'); //installed via npm
-const webpack = require('webpack'); //to access built-in plugins
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  module: {
-    rules: [{ test: /\.txt$/, use: 'raw-loader' }],
-  }, 
-  mode: 'production',
-
-
-  plugins: [new HtmlWebpackPlugin({ template: './public/index.html' })],
-};
-
+    mode: 'development',
+    entry: path.resolve(__dirname, 'src/index.js'),
+    output: {
+        path: path.resolve(__dirname, 'output'),
+        filename: 'bundle.js'
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '*']
+    },
+    module: {
+        rules: [{
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            }
+        ]
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "./public/index.html",
+            filename: "./index.html"
+         })
+    ]
+}
