@@ -117,9 +117,7 @@ const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
                       width={100}
                       timeout={3000} />
                       </div>}>
-                      <div class="ImageDiv">
                       <ImageMain rel="preload"  alt='group'/>
-                      </div>
                             {/* <Image2 rel="preload" /> */}
                   </Suspense>
             </Slide>

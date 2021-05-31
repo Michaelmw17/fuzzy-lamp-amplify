@@ -5,6 +5,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const MyImageRed = ({ image }) => (
   <LazyLoadImage
     effect="blur"
+    max-age="31536000"
     src={process.env.PUBLIC_URL + '/itc-logo-red.png'} 
     style={{
                display: "absolute",
