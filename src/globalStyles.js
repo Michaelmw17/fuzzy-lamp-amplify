@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 const Styles = createGlobalStyle`
+@import "~antd/lib/style/themes/default.less";
+@import "~antd/lib/button/style/index.less";
     body,
     html,
     a {
