@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const GoogleFontsPlugin = require("@beyonk/google-fonts-webpack-plugin")
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'development',
@@ -19,16 +21,26 @@ module.exports = {
                     loader: 'babel-loader'
                 }
             },
-            {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-            }
+        {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./public/index.html",
             filename: "./index.html"
-         })
+         }),
+         new GoogleFontsPlugin({
+			fonts: [
+				{ family: "Ubuntu" },
+				{ family: "Poppins", variants: [ "400", "700italic" ], display: "block" }
+			]
+			/* ...options */
+		}),
+            new MiniCssExtractPlugin({
+            linkType: 'text/css',
+        }),
     ]
 }

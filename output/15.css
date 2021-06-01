@@ -1,0 +1,71 @@
+input {
+     width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.3s ease-in;
+  border-radius: 8px;
+  color: #000;
+
+  }
+#firstName {
+     width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.3s ease-in;
+  border-radius: 8px;
+  color: #000;
+  margin-top:70px;
+
+  }
+#number {
+     width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.3s ease-in;
+  border-radius: 8px;
+  color: #000;
+
+  }
+#subject {
+     width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  font-size: 0.875rem;
+  padding: 1.50rem 0.5rem 0.7rem 1.25rem;
+  /* padding: 1rem 1.25rem; */
+  transition: border-color 0.3s ease-in;
+  border-radius: 8px;
+  color: #000;
+  margin-bottom:20px;
+  }
+#menu {
+     width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  font-size: 0.875rem;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.3s ease-in;
+  border-radius: 8px;
+  color: #000;
+
+  }
+  .formText {
+     margin-left: 1.2rem;
+     font-size: 18px;
+     
+  }
+  
+  #TextAddress {
+     color: rgb(28, 6, 200);
+  }

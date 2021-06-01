@@ -12,7 +12,7 @@ import ContentBlockMain from "../../components/ContentBlockMain";
 
 import './about.css'
 const MeetTheTeam = lazy(() => import('../../components/ServicesSection/Services.js'))
-// const Carousel = lazy(() => import("../../components/CarouselTest/Carousel"));
+const Carousel = lazy(() => import("../../components/CarouselTest/Carousel"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 // const ContentBlockMain = lazy(() => import("../../components/ContentBlockMain"));
 const ContactFrom = lazy(() => import("../../components/ContactForm"));
@@ -70,7 +70,7 @@ function First() {
         />
           </Container>
       <div id="Review">
-        {/* <Carousel/> */}
+        <Carousel/>
         </div>
       <ContactFrom
         title={ContactContent.title}
