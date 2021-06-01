@@ -88,7 +88,7 @@ const scrollTo = (id) => {
                 <S.Title>{t("General & Accounts")}</S.Title>
                 {/* <S.Large left="true" to="/"> */}
                 <S.Para>
-                <a href="tel:02-9419-7947">
+                <a href="tel:02-9419-7947" id="TextNumberGen">
                             {t("Ph: (02) 9419 7947 ")}
                 </a>
                 </S.Para>
@@ -110,7 +110,7 @@ const scrollTo = (id) => {
                 <S.Title>{t("Joe Panetta")}</S.Title>
                 {/* <S.Large left="true"> */}
                 <S.Para>
-                <a href="tel:0412-450-300">
+                <a href="tel:0412-450-300" id="TextNumberJoe">
                             {t("Ph: 0412 450 300")}
                 </a>
                 </S.Para>
@@ -119,7 +119,7 @@ const scrollTo = (id) => {
                 
                 <S.Title >{t("Dominic Panetta")}</S.Title>
                 <S.Para>
-                <a href="tel:0412-479-557">
+                <a href="tel:0412-479-557" id="TextNumberDom">
                             {t("Ph: 0412 479 557")}
                 </a>
                 </S.Para>

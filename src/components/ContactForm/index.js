@@ -165,13 +165,13 @@ const Contact = ({ title, content, id, t , e, handleSubmit}) => {
           </Col>
           <Col lg={12} md={11} sm={24}>
           <div id="TextAddress">
-          <div className="formText" style={{color: 'color: rgb(28, 6, 200)'}}>
-                  <a href="tel:02-9419-7947">
+          <div className="formText" style={{color: 'color:#0526e6pointer'}}>
+                  <a href="tel:02-9419-7947" id="TextNumber">
                     Ph: (02) 9419 7947 
                     </a>
                 </div> 
               <div className="formText">
-                <a href="https://goo.gl/maps/hrBNba4G8a1EbgFg6">
+                <a href="https://goo.gl/maps/hrBNba4G8a1EbgFg6" id="TextAddress">
                  Unit 17, 4-6 Chaplin Drive Lane Cove West NSW 2066
                   </a>
                   
