@@ -14,6 +14,9 @@ import validate from "./validationRules";
 import './stylesForm.css'
 import * as S from "./styles";
 
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
+// import { ArticleContent, ArticleComments } from 'my-app';
+ 
 // const OtherComponent = loadable(() => import('../../pages/First'))
 const Row = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/row'));
 const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/col'));
@@ -180,8 +183,9 @@ const Contact = ({ title, content, id, t , e, handleSubmit}) => {
                     height={100}
                     width={100}
                     timeout={3000} /></div>}>
-                
+                <LazyLoadComponent>
                   <OtherComponent/>
+                  </LazyLoadComponent>
                 </Suspense>
                 
           </Col>
