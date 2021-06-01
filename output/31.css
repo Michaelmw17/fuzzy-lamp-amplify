@@ -26,8 +26,8 @@
   
 } */
 .IntroContainer{
-  background: rgb(255,255,255);
-  background: #2B2D2F;
+  height: 100vh;
+  background-color: #2B2D2F;
   background-size: cover;
 }
 .App {
