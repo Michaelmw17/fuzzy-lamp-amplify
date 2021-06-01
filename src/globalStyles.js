@@ -18,6 +18,7 @@ const Styles = createGlobalStyle`
         border: 0;
         outline: 0;
         overflow-x: hidden;
+      
         
     }
 .Span {

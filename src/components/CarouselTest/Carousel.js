@@ -2,6 +2,8 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper } from '@material-ui/core'
+import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+
 import './stylesCarousel.css'
 export default function Example(props)
 {
@@ -21,7 +23,12 @@ export default function Example(props)
     ]
 
     return (
-        <Carousel>
+        <Carousel autoPlay={false} navButtonsAlwaysVisible={true} navButtonsProps={{          // Change the colors and radius of the actual buttons. THIS STYLES BOTH BUTTONS
+        style: {
+            backgroundColor: 'transparent',
+        }
+    }} 
+        >
             {
                 items.map( (item, i) => <Item key={i} item={item} /> )
             }
@@ -34,9 +41,16 @@ const Item= (props) =>
     return (
         <Paper id="Paper">
         <div className="containerCar">
-           <div className="review"> 
-            <p>{props.item.name}</p>
-            {props.item.description}</div>
+            <div className="review">
+            <h1 id="review-h1">
+            Our Reviews</h1>
+            <div className="Icon">
+            <FormatQuoteIcon style={{ color:"#FFF", fontSize: 105, textAlign: 'right'   }} />
+            </div>
+            {props.item.description}
+            <p id="review-p">{props.item.name}</p>
+            
+            </div>
         </div>
             {/* <Button className="CheckButton">
                 Check it out!

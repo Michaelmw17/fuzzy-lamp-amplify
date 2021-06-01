@@ -6,6 +6,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const MyImageBlue = ({ image }) => (
   <LazyLoadImage
     effect="blur"
+    alt="Neca"
     src={process.env.PUBLIC_URL + '/neca-nat-logo-text.png'} max-age="31536000"
     style={{
                display: "absolute",

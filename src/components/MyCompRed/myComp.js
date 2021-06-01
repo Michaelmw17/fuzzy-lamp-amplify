@@ -7,6 +7,7 @@ const MyImageRed = ({ image }) => (
     effect="blur"
     max-age="31536000"
     src={process.env.PUBLIC_URL + '/itc-logo-red.png'} 
+    alt="In The Cove"
     style={{
                display: "absolute",
                 background: '#FFF',

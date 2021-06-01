@@ -8,6 +8,7 @@ const MyImageBlue = ({ image }) => (
     effect="blur"
    src={process.env.PUBLIC_URL + '/IMG_1050.jpg'}
    max-age="31536000"
+   alt="Group"
     style={{
                   display: "absolute",
                 background: '#FFF',
