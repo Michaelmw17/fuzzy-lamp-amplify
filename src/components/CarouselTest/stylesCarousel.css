@@ -1,3 +1,7 @@
+#Paper ,#PaperH2 {
+  
+  color: #FFF;
+}
 .containerCar {
   padding: 60px;
 
@@ -8,7 +12,7 @@
   margin: auto;
 } */
 .review {
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 10px;
   color: white
 }
