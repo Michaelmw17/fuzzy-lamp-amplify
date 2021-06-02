@@ -1,23 +1,14 @@
 import React, { lazy, Suspense } from "react";
-// import { Row, Col } from "antd";
-
 import Zoom from "react-reveal/Zoom";
 import { withTranslation } from "react-i18next";
 import emailjs from 'emailjs-com';
 import Loader from "react-loader-spinner";
 import useForm from "./useForm";
 import validate from "./validationRules";
-// import loadable from '@loadable/component'
-
-// import InputLabel from '@material-ui/core/InputLabel';
-
 import './stylesForm.css'
 import * as S from "./styles";
-
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
-// import { ArticleContent, ArticleComments } from 'my-app';
- 
-// const OtherComponent = loadable(() => import('../../pages/First'))
+
 const Row = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/row'));
 const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/col'));
 const OtherComponent = lazy(() => import("../First.js"));
@@ -26,17 +17,9 @@ const Button = lazy(() => import("../../common/Button"));
 const TextArea = lazy(() => import("../../common/TextArea"));
 const SimpleSelect = lazy(() => import("../../common/DropDown"));
 
-// const GoogleMap = lazy(() => import('../../pages/First'), {
-//   fallback: <div><Loader
-//     type="Rings"
-//     color="#00BFFF"
-//     timeout={9000}
-//     height={80} width={80} /></div>
-// })
 
 const Contact = ({ title, content, id, t , e, handleSubmit}) => {
    function sendEmail(e) {
-    // e.preventDefault({passive: true});
 
         emailjs.sendForm(
                 "service_a9ktqlp",

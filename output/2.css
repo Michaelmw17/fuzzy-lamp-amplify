@@ -43,33 +43,6 @@
     transform: translateY(0.3em);
 }
 
-/* 
-@font-face {
-  font-family: "Poppins";
-  src: local("Poppins"),
-    url("../../fonts/Poppins/") format("truetype");
-  font-weight: normal;
-} */
-/* @font-face {
-  font-family: 'Poppins';
-  src: local('Poppins'), url(../../fonts/Poppins/Poppins-Black.ttf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Poppins';
-    font-weight: 900;
-    src: local('Poppins'), url(../../fonts/Poppins/Poppins-ExtraBold.ttf) format('opentype');
-}
-
-@font-face {
-    font-family: 'Poppins';
-    font-weight: 300;
-    src: local('Poppins'), url(../../fonts/Poppins/Poppins-Medium.ttf) format('opentype');
-}
-.body {
-  font-family: "Poppins";
-  
-} */
 .IntroContainer{
   height: 100vh;
   background-color: #2B2D2F;

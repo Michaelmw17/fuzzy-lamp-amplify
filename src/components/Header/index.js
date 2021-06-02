@@ -3,7 +3,6 @@ import './stylesHeader.css'
 import '../../globalStyles'
 import Button from '@material-ui/core/Button';
 import Loader from "react-loader-spinner";
-// import React from "react"
 import {  Drawer } from "antd";
 import { CSSTransition } from "react-transition-group";
 import { withTranslation } from "react-i18next";
@@ -14,8 +13,6 @@ import HomeIcon from '@material-ui/icons/Home';
 import RateReviewIcon from '@material-ui/icons/RateReview';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import PhoneForwardedIcon from '@material-ui/icons/PhoneForwarded';
-// import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
-//         import PhoneForwardedIcon from '@material-ui/icons/PhoneForwarded';
         import { Link } from 'react-router-dom';
 import * as S from "./styles";
 const Row = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/row'));
@@ -71,10 +68,6 @@ const useStyles = makeStyles((theme) => ({
           <InfoIcon style={{color:"RGB(209, 29, 50)", fontSize: 30  }} />
           <S.Span ><span>{t("About")}</span></S.Span>
         </S.CustomNavLinkSmall>
-          {/* <S.CustomNavLinkSmall onClick={() => scrollTo("Teams")}>
-            <SupervisorAccountIcon style={{ color:"RGB(209, 29, 50)", fontSize: 40 }} />
-          <S.Span><span>{t("Our Team")}</span></S.Span>
-        </S.CustomNavLinkSmall> */}
           <S.CustomNavLinkSmall onClick={() => scrollTo("Review")}>
             <RateReviewIcon style={{ color:"RGB(209, 29, 50)", fontSize: 30 }} />
           <S.Span><span>{t("Reviews")}</span></S.Span>
@@ -107,15 +100,8 @@ const useStyles = makeStyles((theme) => ({
       </a>
     </div>
     </S.CustomNavLinkSmall>
-        
-
-        {/* <S.CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("Team")}
-        > */}
           <S.Span>
           </S.Span>
-          {/* </S.CustomNavLinkSmall> */}
           </div>
       </Fragment>
     );
@@ -135,9 +121,6 @@ const useStyles = makeStyles((theme) => ({
                                 <MyComp rel="preload" /> 
                     </Suspense>
           </S.LogoContainer>
-          {/* <S.Burger onClick={showDrawer}>
-            <S.Outline />
-          </S.Burger> */}
           <S.NotHidden>
             <MenuItem />
           </S.NotHidden>

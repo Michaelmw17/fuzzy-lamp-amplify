@@ -2,8 +2,6 @@ import { lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import routes from "./config";
 import GlobalStyles from "../globalStyles";
-// import Loader from "react-loader-spinner";
-// import loadable from '@loadable/component'
 const Home = lazy(() => import('../pages/Home'))
 const About = lazy(() => import('../pages/About/About'))
 

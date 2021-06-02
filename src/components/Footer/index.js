@@ -1,15 +1,12 @@
 import React, { lazy, Fragment,Suspense  } from "react";
-// import { Row, Col } from "antd";
 import Loader from "react-loader-spinner";
-
 import { withTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
 import {  Link } from 'react-router-dom';
 import * as S from "./styles";
-// import  { lazy } from "react";
+
 const Row = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/row'));
 const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/col'));
-
 const MyComp = lazy(() => import("../../components/MyComp/myComp"));
 const MyCompRed = lazy(() => import("../../components/MyCompRed/myComp.js"));
 const MyCompBlue = lazy(() => import("../../components/MyCompBlue/myComp.js"));
@@ -53,13 +50,9 @@ const scrollTo = (id) => {
                 <S.Para>Unit 17 </S.Para>
                 <S.Para>4-6 Chaplin Drive</S.Para>
                 <S.Para> Lane Cove West NSW 2066</S.Para>
-                {/* <Mailto email="joe@jdpelectrical.com.au" subject="Enquire To JDP" body="Hello Joe!">
-                    <S.Chat>{t(`Joe@jdpelectrical.com.au`)}</S.Chat>
-                  </Mailto> */}
               </Col>
               <Col lg={6} md={6} sm={12} xs={24} >
               <S.Title>{t("JDP Electrical Services")}</S.Title>
-                {/*Errors below on HOME page*/}
                 <S.Large left="true" to="/">
                   {t("Home")}
                 </S.Large>
@@ -75,24 +68,17 @@ const scrollTo = (id) => {
                 <S.Large left="true"  to="/about" onClick={() => scrollTo("Team")}>
                   {t("Contact")}
                 </S.Large>
-                {/* <S.Empty /> */}
-                
-                {/* <Mailto email="dom@jdpelectrical.com.au" subject="Enquire To JDP" body="Hello Dom!">
-                    <S.Chat>{t(`Dom@jdpelectrical.com.au`)}</S.Chat>
-                  </Mailto> */}
               </Col>
 
 
 
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Title>{t("General & Accounts")}</S.Title>
-                {/* <S.Large left="true" to="/"> */}
                 <S.Para>
                 <a href="tel:02-9419-7947" id="TextNumberGen">
                             {t("Ph: (02) 9419 7947 ")}
                 </a>
                 </S.Para>
-                {/* </S.Large> */}
                 <Mailto email=" info@jdpelectrical.com.au" subject="Enquire To JDP" body="Hello JDP!">
                  <S.Chat>{t(`Info@jdpelectrical.com.au`)}</S.Chat>
                   </Mailto>
@@ -108,7 +94,6 @@ const scrollTo = (id) => {
               <Col lg={8} md={6} sm={12} xs={24}>
                
                 <S.Title>{t("Joe Panetta")}</S.Title>
-                {/* <S.Large left="true"> */}
                 <S.Para>
                 <a href="tel:0412-450-300" id="TextNumberJoe">
                             {t("Ph: 0412 450 300")}
@@ -138,7 +123,7 @@ const scrollTo = (id) => {
                     width={100}
                     timeout={3000}/>
                             }>
-             <Col lg={8} md={6} sm={12} xs={24}>
+            <Col lg={8} md={6} sm={12} xs={24}>
               <Link to="/" >
                 <S.LogoContainer>
                     <MyComp /> 
@@ -161,31 +146,6 @@ const scrollTo = (id) => {
               </Col> 
               </Suspense>
               <S.FooterContainer>
-                {/* <SocialMediaIcons
-                    icons={socialMediaIcons}
-                    iconSize={'1.3em'}
-                    iconColor={'#495056'}
-                  /> */}
-                {/* <SocialLink
-                  href=""
-                  src="github.svg"
-                />
-                <SocialLink
-                  href="https://twitter.com/Adrinlolx"
-                  src="twitter.svg"
-                />
-                <SocialLink
-                  href=""
-                  src="/linkedin.svg"
-                />
-                <SocialLink
-                  href=""
-                  src="instagram.svg"
-                />
-                <SocialLink
-                  href=""
-                  src="medium.svg"
-                /> */}
               </S.FooterContainer>
             </Row>
           </Container>

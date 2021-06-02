@@ -1,13 +1,7 @@
-// import { Row } from "antd";
-// import { Col } from "antd";
 import React, {  lazy, Suspense } from "react";
-// import Grid from '@material-ui/core/Grid';
 import { withTranslation } from "react-i18next";
 import Slide from "react-reveal/Slide";
 import ButtonAnimated from '../../../common/ButtonAnimation/AnimationButton'
-// import SvgIcon from "../../../components/ImageComp/imgComp";
-// import Image from "../ImageComponent/index";
-// import Container from '@material-ui/core/Container';
 import './styling.css'
 import Button from "../../../common/Button";
 import ContactMailIcon from '@material-ui/icons/ContactMail';
@@ -18,18 +12,8 @@ import * as S from "./styles";
 const Row = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/row'));
 const Col = React.lazy(() => import(/* webpackChunkName: "sula-antd" */ 'antd/lib/grid/col'));
 
-// const Image = lazy(() => import('../../MyCompGroup/myComp.js'), {
-//     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
-// })
-// const Image = lazy(() => import('../../MyCompMain/myComp.js'), {
-//     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
-// })
 
 const Image = lazy(() => import("../../MyCompMain/myComp.js"));
-
-// const Image = lazy(() => import('../ImageComponent/index.js'), {
-//     fallback: <div><Loader type="Rings" color="#00BFFF" height={80} width={80} /></div>
-// })
 
 const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
   const scrollTo = (id) => {
@@ -91,11 +75,8 @@ const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
                                   })}
                               </S.ButtonWrapper>
                             </Col>
-                            
-                          </Row>
-                                  
+                      </Row>
               </Row>
-              {/* </Grid> */}
             </S.ContentWrapper>
           </Slide>
         </Col>
@@ -110,12 +91,6 @@ const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
 }>
             <Image id='ImageComp' rel="preload" />
             </Suspense>
-            {/* <SvgIcon
-              src={icon}
-              className="about-block-image"
-              width="100%"
-              height="100%"
-            /> */}
           </Slide>
         </Col>
       </Row>

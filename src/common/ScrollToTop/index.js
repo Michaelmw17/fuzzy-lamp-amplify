@@ -1,9 +1,7 @@
-// import SvgIcon from "../../common/SvgIcon";
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import * as S from "./styles";
-// import AlarmIcon from '@material-ui/icons/Alarm';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 const useStyles = makeStyles((theme) => ({
   root: {

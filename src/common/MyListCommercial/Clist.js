@@ -1,9 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
-// import ListItem from '@material-ui/core/ListItem';
-// import ListItemText from '@material-ui/core/ListItemText';
-// import ListSubheader from '@material-ui/core/ListSubheader';
 import './Cstyle.css'
 
 const words = ['Maintenance and repairs', 'Lighting and power ', 'Testing and tagging ', 'Data points  ', 'Smoke detectors', 'Emergency lighting' ];

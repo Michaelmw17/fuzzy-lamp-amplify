@@ -43,7 +43,6 @@ export const Target = styled.a`
 `;
 
 export const Extra = styled.section`
-  // background: #F7F9FB;
   position: relative;
   width: 90%;
   padding-right: 5px;

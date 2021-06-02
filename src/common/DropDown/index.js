@@ -44,26 +44,6 @@ export default function SimpleSelect() {
           <MenuItem value={"Other"}>Other</MenuItem>
         </Select>
       </FormControl>
-      {/* <FormControl className={classes.formControl}>
-        
-        <Select
-          labelId="simple-select"
-          id="menu"
-          name="menu"
-          placeholder="What can we help you with?:  *"
-          value={"What can we help you with?:  *"}
-          onChange={handleChange}
-          displayEmpty
-          className={classes.selectEmpty}
-        >
-        
-          <MenuItem value={"Residential"}>Residential</MenuItem>
-          <MenuItem value={"Strata / Property Maintenance "}>Strata / Property Maintenance </MenuItem>
-          <MenuItem value={"Commercial"}>Commercial</MenuItem>
-          <MenuItem value={"Other"}>Other</MenuItem>
-        </Select>
-      </FormControl>
-       */}
     </div>
   );
 }

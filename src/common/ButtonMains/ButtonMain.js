@@ -17,11 +17,6 @@ const useStyles = makeStyles((theme) => ({
       width: "50%",
       marginLeft: "90px",
     },
-    //       '&:hover': {
-    //    background:"linear-gradient(90deg, #add8e6  0%, #add8e6 50%, #add8e6 100%)",
-            
-    // },
-    
   },
 }));
 

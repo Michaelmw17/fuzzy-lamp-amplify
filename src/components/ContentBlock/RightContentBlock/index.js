@@ -98,7 +98,6 @@ const RightBlock = ({ title, content, contentTwo, button, icon, t, id }) => {
                 </div>
               </div>
               </Row>
-              {/* </Grid> */}
             </S.ContentWrapper>
           </Slide>
         </Col>

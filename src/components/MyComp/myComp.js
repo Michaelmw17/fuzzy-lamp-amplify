@@ -9,7 +9,7 @@ const MyComp = () => {
         color="#00BFFF"
         height={100}
         width={100}
-        timeout={3000} //3 secs
+        timeout={3000}
       />
                             }>
         <img src={process.env.PUBLIC_URL + '/JDP-BRANDING-04.png'}

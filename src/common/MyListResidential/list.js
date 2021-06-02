@@ -1,9 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
-// import ListItem from '@material-ui/core/ListItem';
-// import ListItemText from '@material-ui/core/ListItemText';
-// import ListSubheader from '@material-ui/core/ListSubheader';
 import './RStyle.css'
 
 const words = ['Repairs & Maintenance', 'Renovations & New Builds', 'Clipsal Cbus Automation', 'Switchboard Upgrades', 'Safety Switch protection','  Smoke Detectors','General Power Outlets', 'LED Lighting upgrade','Security & Garden Lighting', 'Ceiling Sweep Fans', 'Appliance installations & Repairs', 'TV – DATA – Communications',];

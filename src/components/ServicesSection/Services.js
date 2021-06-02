@@ -10,8 +10,6 @@ import BusinessIcon from '@material-ui/icons/Business';
 import BuildSharpIcon from '@material-ui/icons/BuildSharp';
 import './ServicesStyles.css'
 import ContainerCardFlip from '../../components/ContainerCardFlip';
-// const Container = lazy(() => import("../../common/ContainerCardFlip"));
-// import FlipCameraAndroidIcon from '@material-ui/icons/FlipCameraAndroid';
 const styles = {
   root:{
     
@@ -82,11 +80,6 @@ const TestApp = ({ classes }) => {
                           <BuildSharpIcon  style={{ 
                         fontSize: 210, paddingTop: 0, color: "#FFF", paddingLeft: 45
                           }} />
-                          {/* <FlipCameraAndroidIcon  style={{ 
-                        fontSize: 100, color: "#FFF", paddingLeft: 0, paddingTop: 30,
-  top: "0px",
-  left: "10px",
-                          }}/> */}
                       </div>
                       </div>
                       </div>
@@ -153,8 +146,6 @@ const styling = {
   '-webkit-box-shadow': "0 7px 8px rgba(0, 0, 0, 0.12)",
   '-moz-box-shadow': "0 7px 8px rgba(0, 0, 0, 0.12)",
   'box-shadow':" 0 7px 8px rgba(0, 0, 0, 0.12)",
-  // boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
- 
     color: "white",
   }
 };
