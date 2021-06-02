@@ -46,5 +46,5 @@ input, #number, #menu {
      color: #2a4bf5;
   }
   #TextAddress:hover, #TextNumber:hover, #TextNumberDom:hover, #TextNumberJoe:hover, #TextNumberGen:hover {
-     color: RGB(209, 29, 50);
+     color: rgb(209, 29, 50);
   }
